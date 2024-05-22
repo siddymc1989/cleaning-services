@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #67f807;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: #f8f4f4;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  color: #a00f0f;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.btn-container {
+  position: relative;
+}
+
+.btn-background {
+  background-color: #080808;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.8;
+  width: 100px;
+  height: auto;
+}
+
+.btn {
+  background-color: rgb(111, 0, 255);
+  color: #080808;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.content-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-content img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #ca7514;
+  padding: 2rem;
+  border-radius: 5px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column;
+  }
+  .service-cards {
+      flex-direction: column;
+  }
+  .card {
+      width: 80%;
+      margin-bottom: 2rem;
+  }
+  .about-content {
+      flex-direction: column;
+      text-align: left;
+  }
+}
